@@ -111,15 +111,15 @@ function App() {
     },
     {
       title: "Web & Backend",
-      skills: ["React", "Node.js", "Express", "Flask", "REST APIs", "HTML5", "CSS3"],
+      skills: ["React", "Node.js", "Express", "FastAPI", "Flask", "REST APIs", "HTML5", "CSS3"],
     },
     {
       title: "Databases & ORM",
       skills: ["PostgreSQL", "MySQL", "MongoDB (Basic)", "Drizzle ORM"],
     },
     {
-      title: "Computer Vision & ML",
-      skills: ["OpenCV", "MediaPipe", "Scikit-learn", "Naive Bayes", "Feature Extraction"],
+      title: "AI, Vision & Machine Learning",
+      skills: ["OpenCV", "MediaPipe", "Qwen3", "Ollama", "Scikit-learn", "Naive Bayes"],
     },
     {
       title: "Core Computer Science",
@@ -141,14 +141,31 @@ function App() {
       description:
         "A full-stack mentor–mentee management system with role-based dashboards engineered to coordinate mentorship workflows, academic progress reviews, and meetings across multi-year engineering cohorts.",
       keyPoints: [
-        "Architected role-based dashboards with authenticated access for students, faculty mentors, and institutional administrators.",
-        "Engineered meeting scheduling, mentee progress reviews, and interactive communication using React and Express REST APIs.",
-        "Modeled relational database schemas using PostgreSQL and Drizzle ORM, with production deployment on Render.",
+        "Led a team in developing a full-stack mentor–mentee management platform with role-based dashboards for students, mentors, and administrators.",
+        "Implemented authentication, mentor profiles, academic tracking, meetings, and chat functionality using React and Express REST APIs.",
+        "Integrated PostgreSQL with Drizzle ORM and deployed the application using Render.",
       ],
       technologies: ["React", "Node.js", "Express", "PostgreSQL", "Drizzle ORM", "REST APIs", "Render"],
       githubUrl: "https://github.com/Aasim78/MentorConnect",
       liveUrl: "https://mentorconnect-wjz6.onrender.com",
       publicationNote: "Peer-reviewed research published in IEEE ICKECS 2026",
+    },
+    {
+      id: "fin-agent",
+      title: "FinAgent",
+      tagline: "AI Financial Analysis Assistant",
+      role: null,
+      badge: "AI / LLM & FastAPI",
+      description:
+        "An AI-powered financial analysis assistant that interprets natural-language queries, runs deterministic analytical tools, and delivers verifiable corporate financial metrics.",
+      keyPoints: [
+        "Developed an AI-powered financial analysis assistant that interprets natural-language queries and uses an LLM for intent recognition and tool selection.",
+        "Implemented deterministic Python tools for revenue, expense, profit, profit margin, month-to-month growth, and overall financial performance analysis.",
+        "Built an interactive React dashboard with FastAPI backend and local Qwen3/Ollama inference, including missing-data handling without fabricating values.",
+      ],
+      technologies: ["Qwen3", "Ollama", "FastAPI", "React", "Python"],
+      githubUrl: "https://github.com/Aasim78/FinAgent",
+      liveUrl: null,
     },
     {
       id: "gesture-control",
@@ -159,29 +176,12 @@ function App() {
       description:
         "A touchless human-computer interface translating real-time webcam video into native operating system inputs without specialized sensor hardware.",
       keyPoints: [
-        "Processed live video streams using OpenCV and MediaPipe to track 21 3D hand landmarks at real-time framerates.",
-        "Designed spatial gesture heuristics mapping index finger coordinates to smooth on-screen cursor navigation.",
-        "Implemented landmark proximity thresholds for left/right clicks and interfaced with Windows OS APIs for system volume control.",
+        "Developed a real-time touchless computer-control system using webcam input, MediaPipe hand tracking, and 21 hand landmarks.",
+        "Implemented gesture-based cursor movement, left/right mouse clicks, and Windows volume control using landmark-based gesture recognition.",
+        "Designed lightweight gesture heuristics for real-time interaction and integrated computer-vision processing with OS-level controls.",
       ],
       technologies: ["Python", "OpenCV", "MediaPipe", "NumPy", "OS Automation"],
       githubUrl: "https://github.com/Aasim78/Gesture_Control",
-      liveUrl: null,
-    },
-    {
-      id: "spam-classifier",
-      title: "Spam Email Classifier",
-      tagline: "Machine Learning & NLP",
-      role: null,
-      badge: "Machine Learning / NLP",
-      description:
-        "An end-to-end NLP and machine learning pipeline that accurately distinguishes spam messages from legitimate communication using probabilistic text modeling.",
-      keyPoints: [
-        "Implemented text cleaning, tokenization, stop-word elimination, and vectorization pipelines.",
-        "Trained and evaluated a Multinomial Naive Bayes classifier on text corpora for reliable message scoring.",
-        "Built a lightweight Flask web interface for low-latency, real-time message inference and demonstration.",
-      ],
-      technologies: ["Python", "Scikit-learn", "Naive Bayes", "Flask", "NLP"],
-      githubUrl: "https://github.com/Aasim78/naive-bayes-spam-classifier",
       liveUrl: null,
     },
   ];
