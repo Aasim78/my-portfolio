@@ -362,9 +362,11 @@ function App() {
             </a>
 
             <a
-              href={`mailto:${emailAddress}`}
+              href={`https://mail.google.com/mail/?view=cm&fs=1&to=${emailAddress}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="social-chip"
-              aria-label="Send email directly"
+              aria-label="Send email via Gmail"
             >
               <Mail size={15} />
               <span>{emailAddress}</span>
@@ -696,12 +698,14 @@ function App() {
                   </button>
 
                   <a
-                    href={`mailto:${emailAddress}`}
+                    href={`https://mail.google.com/mail/?view=cm&fs=1&to=${emailAddress}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="btn btn-ghost btn-sm"
-                    title="Open mail client"
+                    title="Open Gmail to compose email"
                   >
                     <ArrowUpRight size={14} />
-                    <span>Mail Client</span>
+                    <span>Open Gmail</span>
                   </a>
                 </div>
               </div>
